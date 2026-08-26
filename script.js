@@ -390,3 +390,63 @@ document.addEventListener("keydown", event => {
     }
 
 });
+
+/* =====================================================
+   CUSTOM CURSOR
+===================================================== */
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
+
+if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
+    let mouseX = 0;
+    let mouseY = 0;
+    let outlineX = 0;
+    let outlineY = 0;
+    let initialized = false;
+
+    window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        if (!initialized) {
+            outlineX = mouseX;
+            outlineY = mouseY;
+            initialized = true;
+        }
+
+        // Dot follows instantly
+        cursorDot.style.left = `${mouseX}px`;
+        cursorDot.style.top = `${mouseY}px`;
+    });
+
+    // Outline follows with a delay
+    function animateCursor() {
+        if (initialized) {
+            let distX = mouseX - outlineX;
+            let distY = mouseY - outlineY;
+            
+            outlineX = outlineX + (distX * 0.15);
+            outlineY = outlineY + (distY * 0.15);
+            
+            cursorOutline.style.left = `${outlineX}px`;
+            cursorOutline.style.top = `${outlineY}px`;
+        }
+        
+        requestAnimationFrame(animateCursor);
+    }
+    
+    animateCursor();
+
+    // Hover effect on links and buttons
+    const hoverElements = document.querySelectorAll("a, button, .btn, .premium-glass");
+    
+    hoverElements.forEach(el => {
+        el.addEventListener("mouseenter", () => {
+            document.body.classList.add("cursor-hover");
+        });
+        
+        el.addEventListener("mouseleave", () => {
+            document.body.classList.remove("cursor-hover");
+        });
+    });
+}
