@@ -3,37 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Divyatej — Computer Science Engineering student specializing in Cybersecurity, Backend Development and modern web technologies.">
-
+    <meta name="description" content="Divyatej — Computer Science Engineering student specializing in Cybersecurity, Backend Development, AI Engineering, and modern web technologies.">
     <meta name="author" content="Divyatej">
 
-    <title>Divyatej | Backend Developer & Cybersecurity Student</title>
+    <title>Divyatej | Backend & AI Engineering</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Boxicons -->
-    <link
-        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- =========================
-         LOADER
-    ========================== -->
-
+    <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
             <span></span>
@@ -41,1146 +29,369 @@
         </div>
     </div>
 
-
-    <!-- =========================
-         SCROLL PROGRESS
-    ========================== -->
-
+    <!-- SCROLL PROGRESS -->
     <div id="progress-bar"></div>
 
-
-    <!-- =========================
-         HEADER
-    ========================== -->
-
+    <!-- HEADER -->
     <header class="header">
-
-        <a href="#home" class="logo">
-            Divya<span>tej</span>
-        </a>
-
+        <a href="#home" class="logo">Divya<span>tej</span></a>
         <button class="menu-btn" id="menu-btn" aria-label="Open navigation">
             <i class="bx bx-menu"></i>
         </button>
-
         <nav class="navbar" id="navbar">
-
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
             <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
             <a href="#contact">Contact</a>
-
         </nav>
-
     </header>
 
-
-    <!-- =========================
-         HERO
-    ========================== -->
-
     <main>
-
+        <!-- HERO -->
         <section class="hero" id="home">
-
             <div class="hero-grid"></div>
-
             <div class="hero-content reveal">
-
                 <div class="availability">
                     <span class="status-dot"></span>
                     Available for opportunities
                 </div>
-
-                <p class="hero-small">
-                    HELLO, I'M
-                </p>
-
-                <h1>
-                    Divyatej
-                </h1>
-
+                <p class="hero-small">DIVYATEJ</p>
+                <h1>Backend / Full-Stack Developer</h1>
                 <h2>
                     <span id="typing-text"></span>
                     <span class="typing-cursor">|</span>
                 </h2>
-
                 <p class="hero-description">
-                    Computer Science Engineering student specializing in Cybersecurity,
-                    with hands-on experience building backend APIs, databases and
-                    modern web applications.
+                    AI Engineering • APIs • Modern Web Applications<br><br>
+                    Currently building and learning through the <strong>FlyRank Backend AI Engineering Internship</strong>.
                 </p>
-
                 <div class="hero-buttons">
-
                     <a href="#projects" class="btn primary-btn">
-                        View My Work
+                        View Projects
                         <i class="bx bx-right-arrow-alt"></i>
                     </a>
-
-                    <a href="resume.pdf" class="btn secondary-btn" download>
-                        Download Resume
-                        <i class="bx bx-download"></i>
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                        <i class="bx bx-envelope"></i>
                     </a>
-
                 </div>
-
                 <div class="hero-socials">
-
-                    <a
-                        href="https://github.com/rdivyatej-cloud"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub">
-
-                        <i class="bx bxl-github"></i>
-
-                    </a>
-
-                    <a
-                        href="https://linkedin.com/in/divyatej2007"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn">
-
-                        <i class="bx bxl-linkedin"></i>
-
-                    </a>
-
-                    <a
-                        href="mailto:rdivyatej@gmail.com"
-                        aria-label="Email">
-
-                        <i class="bx bx-envelope"></i>
-
-                    </a>
-
+                    <a href="https://github.com/rdivyatej-cloud" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="https://linkedin.com/in/divyatej2007" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    <a href="mailto:rdivyatej@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
                 </div>
-
             </div>
 
-
-            <!-- SIMPLE HERO CARD -->
-
-            <div class="hero-card reveal">
-
+            <!-- GLOSSY HERO CARD -->
+            <div class="hero-card premium-glass reveal">
                 <div class="code-window">
-
                     <div class="window-header">
-
-                        <div class="window-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-
-                        <span class="window-title">
-                            developer.js
-                        </span>
-
+                        <div class="window-dots"><span></span><span></span><span></span></div>
+                        <span class="window-title">developer.js</span>
                     </div>
-
                     <div class="code-content">
-
-                        <p>
-                            <span class="code-purple">const</span>
-                            developer =
-                            <span class="code-blue">{</span>
-                        </p>
-
-                        <p class="indent">
-                            name:
-                            <span class="code-green">
-                                "Divyatej"
-                            </span>,
-                        </p>
-
-                        <p class="indent">
-                            focus:
-                            <span class="code-green">
-                                "Backend & Security"
-                            </span>,
-                        </p>
-
-                        <p class="indent">
-                            stack:
-                            <span class="code-green">
-                                "Node.js"
-                            </span>,
-                        </p>
-
-                        <p class="indent">
-                            database:
-                            <span class="code-green">
-                                "PostgreSQL"
-                            </span>,
-                        </p>
-
-                        <p class="indent">
-                            mindset:
-                            <span class="code-green">
-                                "Build. Learn. Improve."
-                            </span>
-                        </p>
-
-                        <p>
-                            <span class="code-blue">};</span>
-                        </p>
-
-                        <p class="code-comment">
-                            // Always learning something new.
-                        </p>
-
+                        <p><span class="code-purple">const</span> developer = <span class="code-blue">{</span></p>
+                        <p class="indent">name: <span class="code-green">"Divyatej"</span>,</p>
+                        <p class="indent">focus: <span class="code-green">"Backend & AI Engineering"</span>,</p>
+                        <p class="indent">currentRole: <span class="code-green">"FlyRank Intern"</span>,</p>
+                        <p class="indent">mindset: <span class="code-green">"Build. Learn. Improve."</span></p>
+                        <p><span class="code-blue">};</span></p>
+                        <p class="code-comment">// Always learning something new.</p>
                     </div>
-
                 </div>
-
                 <div class="hero-mini-stats">
-
-                    <div>
-                        <strong>01</strong>
-                        <span>Backend Internship</span>
-                    </div>
-
-                    <div>
-                        <strong>04+</strong>
-                        <span>Core Projects</span>
-                    </div>
-
-                    <div>
-                        <strong>15+</strong>
-                        <span>Technologies</span>
-                    </div>
-
+                    <div><strong>01</strong><span>Backend Internship</span></div>
+                    <div><strong>04+</strong><span>Core Projects</span></div>
+                    <div><strong>15+</strong><span>Technologies</span></div>
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section class="section about" id="about">
-
-            <div class="section-heading reveal">
-
-                <span>ABOUT ME</span>
-
-                <h2>
-                    Building with curiosity.
-                </h2>
-
-                <p>
-                    A developer who enjoys understanding how things work
-                    behind the interface.
-                </p>
-
-            </div>
-
-            <div class="about-container">
-
-                <div class="about-text reveal">
-
-                    <p>
-                        I'm a Computer Science Engineering student at
-                        <strong>SRM University AP</strong>, specializing in
-                        Cybersecurity.
-                    </p>
-
-                    <p>
-                        My interests have gradually moved beyond just frontend
-                        development. I enjoy building APIs, working with databases,
-                        understanding backend architecture and exploring how
-                        security fits into software development.
-                    </p>
-
-                    <p>
-                        Recently, I've been strengthening my backend development
-                        skills through hands-on projects and my
-                        <strong>FlyRank AI backend internship</strong>, working
-                        with technologies such as Node.js, Express, REST APIs,
-                        PostgreSQL, Docker and API documentation.
-                    </p>
-
-                    <p>
-                        I like building things, breaking them, figuring out why
-                        they broke, and then making them better.
-                    </p>
-
-                </div>
-
-
-                <div class="about-highlights reveal">
-
-                    <div class="highlight-card">
-
-                        <i class="bx bx-code-alt"></i>
-
-                        <div>
-                            <h3>Backend Development</h3>
-                            <p>
-                                REST APIs, Node.js, Express and databases.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="highlight-card">
-
-                        <i class="bx bx-shield-quarter"></i>
-
-                        <div>
-                            <h3>Cybersecurity</h3>
-                            <p>
-                                Security fundamentals, networking and secure coding.
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="highlight-card">
-
-                        <i class="bx bx-layout"></i>
-
-                        <div>
-                            <h3>Web Development</h3>
-                            <p>
-                                Responsive interfaces and modern web experiences.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             EXPERIENCE
-        ========================== -->
-
+        <!-- EXPERIENCE (Elevated) -->
         <section class="section experience" id="experience">
-
             <div class="section-heading reveal">
-
-                <span>EXPERIENCE</span>
-
-                <h2>
-                    Where I've been learning.
-                </h2>
-
+                <span>CURRENT ROLE</span>
+                <h2>Professional Experience.</h2>
             </div>
-
-
-            <div class="experience-card reveal">
-
+            
+            <div class="experience-card premium-glass reveal">
                 <div class="experience-top">
-
                     <div>
-
-                        <span class="experience-label">
-                            BACKEND DEVELOPMENT
-                        </span>
-
-                        <h3>
-                            Backend Intern
-                        </h3>
-
-                        <h4>
-                            FlyRank AI
-                        </h4>
-
+                        <span class="experience-label">BACKEND & AI ENGINEERING</span>
+                        <h3>Backend Intern</h3>
+                        <h4>FlyRank AI</h4>
                     </div>
-
-                    <div class="experience-date">
-                        Internship
-                    </div>
-
+                    <div class="experience-date">Present</div>
                 </div>
-
-
                 <div class="experience-content">
-
                     <div class="experience-description">
-
-                        <p>
-                            Worked on backend development concepts through
-                            practical API and database projects, focusing on
-                            building, testing and documenting backend services.
-                        </p>
-
-                        <p>
-                            The experience helped me move from simply consuming
-                            APIs to understanding how backend systems are
-                            structured, connected to databases and tested.
-                        </p>
-
+                        <ul class="experience-bullets">
+                            <li>Developing robust backend systems and REST APIs to support AI-driven applications.</li>
+                            <li>Integrating LLMs and automation workflows into core product features.</li>
+                            <li>Collaborating on capstone projects focusing on technical depth, API design, and scalable solutions.</li>
+                            <li>Gaining hands-on experience with production-grade backend architecture, database modeling, and API documentation.</li>
+                        </ul>
                     </div>
-
-
                     <div class="experience-skills">
-
-                        <h4>
-                            Technologies & Skills
-                        </h4>
-
+                        <h4>Technologies Used</h4>
                         <div class="tag-list">
-
-                            <span>Node.js</span>
-                            <span>Express.js</span>
-                            <span>REST APIs</span>
-                            <span>PostgreSQL</span>
-                            <span>SQLite</span>
-                            <span>MongoDB</span>
-                            <span>Docker</span>
-                            <span>Postman</span>
-                            <span>Swagger</span>
-                            <span>OpenAPI</span>
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>JavaScript</span>
-                            <span>API Testing</span>
-                            <span>CRUD</span>
-
+                            <span>Node.js</span><span>Express</span><span>REST APIs</span><span>AI Integration</span><span>PostgreSQL</span><span>Docker</span>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section class="section skills" id="skills">
-
+        <!-- ABOUT -->
+        <section class="section about" id="about">
             <div class="section-heading reveal">
-
-                <span>TECH STACK</span>
-
-                <h2>
-                    Tools I work with.
-                </h2>
-
-                <p>
-                    A growing toolkit built through coursework,
-                    internships and personal projects.
-                </p>
-
+                <span>ABOUT ME</span>
+                <h2>Building with curiosity.</h2>
+                <p>A developer who enjoys understanding how things work behind the interface.</p>
             </div>
-
-
-            <div class="skills-grid">
-
-
-                <!-- PROGRAMMING -->
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-card-icon">
-                        <i class="bx bx-code-alt"></i>
-                    </div>
-
-                    <h3>Programming</h3>
-
-                    <p>
-                        Languages I use for development and problem solving.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>JavaScript</span>
-                        <span>Python</span>
-                        <span>C</span>
-                        <span>C++</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-
-                    </div>
-
+            <div class="about-container">
+                <div class="about-text reveal">
+                    <p>I'm a Computer Science Engineering student at <strong>SRM University AP</strong>, specializing in Cybersecurity.</p>
+                    <p>My interests have evolved into building robust APIs, working with databases, understanding backend architecture, and integrating AI into software products.</p>
+                    <p>I like building things, breaking them, figuring out why they broke, and then making them better.</p>
                 </div>
-
-
-                <!-- BACKEND -->
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-card-icon">
+                <div class="about-highlights reveal">
+                    <div class="highlight-card premium-glass">
                         <i class="bx bx-server"></i>
+                        <div>
+                            <h3>Backend Systems</h3>
+                            <p>REST APIs, Node.js, Express, databases.</p>
+                        </div>
                     </div>
-
-                    <h3>Backend</h3>
-
-                    <p>
-                        Building APIs and server-side applications.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>REST API</span>
-                        <span>CRUD</span>
-                        <span>Swagger</span>
-                        <span>OpenAPI</span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- DATABASE -->
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-card-icon">
-                        <i class="bx bx-data"></i>
-                    </div>
-
-                    <h3>Databases</h3>
-
-                    <p>
-                        Working with relational and NoSQL databases.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>PostgreSQL</span>
-                        <span>MongoDB</span>
-                        <span>SQLite</span>
-                        <span>SQL</span>
-                        <span>Database Design</span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- DEV TOOLS -->
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-card-icon">
-                        <i class="bx bx-terminal"></i>
-                    </div>
-
-                    <h3>Developer Tools</h3>
-
-                    <p>
-                        Tools used for development, testing and deployment.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>Docker</span>
-                        <span>Postman</span>
-                        <span>VS Code</span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- CYBERSECURITY -->
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-card-icon">
-                        <i class="bx bx-shield-quarter"></i>
-                    </div>
-
-                    <h3>Cybersecurity</h3>
-
-                    <p>
-                        Security concepts developed through my degree and coursework.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>Network Security</span>
-                        <span>OWASP</span>
-                        <span>Cryptography</span>
-                        <span>Secure Coding</span>
-                        <span>Linux</span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- AI -->
-
-                <div class="skill-card reveal">
-
-                    <div class="skill-card-icon">
+                    <div class="highlight-card premium-glass">
                         <i class="bx bx-brain"></i>
-                    </div>
-
-                    <h3>AI & Modern Development</h3>
-
-                    <p>
-                        Exploring practical AI development and agent workflows.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>LangChain</span>
-                        <span>LangGraph</span>
-                        <span>MCP</span>
-                        <span>AI APIs</span>
-                        <span>Prompt Engineering</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section class="section projects" id="projects">
-
-            <div class="section-heading reveal">
-
-                <span>SELECTED WORK</span>
-
-                <h2>
-                    Things I've built.
-                </h2>
-
-                <p>
-                    A mix of backend systems, web applications and
-                    academic projects.
-                </p>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <!-- PROJECT 01 -->
-
-                <article class="project-card reveal">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                    <div class="project-icon">
-                        <i class="bx bx-server"></i>
-                    </div>
-
-                    <h3>
-                        Task API CRUD
-                    </h3>
-
-                    <p>
-                        RESTful task management API with CRUD operations,
-                        database persistence and API documentation.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>PostgreSQL</span>
-                        <span>Docker</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a
-                            href="https://github.com/rdivyatej-cloud/task-api-crud"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            GitHub
-                            <i class="bx bx-right-arrow-alt"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 02 -->
-
-                <article class="project-card reveal">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                    <div class="project-icon">
-                        <i class="bx bx-globe"></i>
-                    </div>
-
-                    <h3>
-                        Developer Portfolio
-                    </h3>
-
-                    <p>
-                        Responsive personal portfolio designed to showcase
-                        my development experience, projects and skills.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Responsive UI</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a
-                            href="https://github.com/rdivyatej-cloud/divyatejportfolio"
-                            target="_blank"
-                            rel="noopener noreferrer">
-
-                            GitHub
-                            <i class="bx bx-right-arrow-alt"></i>
-
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 03 -->
-
-                <article class="project-card reveal">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                    <div class="project-icon">
-                        <i class="bx bx-edit"></i>
-                    </div>
-
-                    <h3>
-                        Handwriting Generator
-                    </h3>
-
-                    <p>
-                        Web application concept that converts typed text into
-                        handwritten-style notebook pages.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Canvas</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#" class="disabled-link">
-                            Live Demo
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PROJECT 04 -->
-
-                <article class="project-card reveal">
-
-                    <div class="project-number">
-                        04
-                    </div>
-
-                    <div class="project-icon">
-                        <i class="bx bx-user-check"></i>
-                    </div>
-
-                    <h3>
-                        Student Attendance System
-                    </h3>
-
-                    <p>
-                        C++ based academic project focused on student attendance,
-                        data handling and object-oriented programming.
-                    </p>
-
-                    <div class="tag-list">
-
-                        <span>C++</span>
-                        <span>OOP</span>
-                        <span>DSA</span>
-
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#" class="disabled-link">
-                            GitHub
-                            <i class="bx bx-right-arrow-alt"></i>
-                        </a>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             EDUCATION
-        ========================== -->
-
-        <section class="section education" id="education">
-
-            <div class="section-heading reveal">
-
-                <span>EDUCATION</span>
-
-                <h2>
-                    My academic journey.
-                </h2>
-
-            </div>
-
-
-            <div class="timeline">
-
-                <div class="timeline-item reveal">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-content">
-
-                        <span>
-                            2024 — 2028
-                        </span>
-
-                        <h3>
-                            B.Tech — Computer Science Engineering
-                        </h3>
-
-                        <h4>
-                            SRM University AP
-                        </h4>
-
-                        <p>
-                            Specialization: Cybersecurity
-                        </p>
-
-                        <div class="education-meta">
-
-                            <span>
-                                CGPA: 7.27
-                            </span>
-
-                            <span>
-                                Pre-final Year
-                            </span>
-
+                        <div>
+                            <h3>AI Engineering</h3>
+                            <p>LLM integrations and agent workflows.</p>
                         </div>
-
                     </div>
-
-                </div>
-
-
-                <div class="timeline-item reveal">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-content">
-
-                        <span>
-                            School & Intermediate
-                        </span>
-
-                        <h3>
-                            Academic Foundation
-                        </h3>
-
-                        <p>
-                            Completed school and intermediate education
-                            before pursuing Computer Science Engineering.
-                        </p>
-
+                    <div class="highlight-card premium-glass">
+                        <i class="bx bx-layout"></i>
+                        <div>
+                            <h3>Full-Stack</h3>
+                            <p>Bringing responsive web applications to life.</p>
+                        </div>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- =========================
-             CERTIFICATIONS
-        ========================== -->
-
-        <section class="section certificates" id="certificates">
-
+        <!-- PROJECTS -->
+        <section class="section projects" id="projects">
             <div class="section-heading reveal">
-
-                <span>CERTIFICATIONS</span>
-
-                <h2>
-                    Learning beyond the classroom.
-                </h2>
-
+                <span>SELECTED WORK</span>
+                <h2>Featured Projects.</h2>
+                <p>A mix of backend systems, AI applications, and practical tools.</p>
             </div>
-
-
-            <div class="certificate-grid">
-
-
-                <div class="certificate-card reveal">
-
-                    <i class="bx bx-shield-quarter"></i>
-
-                    <div>
-
-                        <h3>
-                            Introduction to Cybersecurity
-                        </h3>
-
-                        <p>
-                            Cisco
-                        </p>
-
+            
+            <div class="projects-editorial">
+                <!-- FEATURED PROJECT 1 -->
+                <article class="project-card featured-project premium-glass reveal">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-label">AI & BACKEND</span>
+                            <h3>FlyRank Capstone</h3>
+                        </div>
+                        <p class="project-value">AI-powered backend capstone project</p>
+                        <p class="project-desc">A comprehensive backend system built during the FlyRank internship, demonstrating API design, AI integration, and scalable architecture.</p>
+                        <div class="tag-list">
+                            <span>Node.js</span><span>Express</span><span>AI APIs</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rdivyatej-cloud" target="_blank" class="btn primary-btn btn-small">
+                                View GitHub <i class="bx bx-right-arrow-alt"></i>
+                            </a>
+                        </div>
                     </div>
+                </article>
 
+                <div class="projects-grid-2">
+                    <!-- PROJECT 2 -->
+                    <article class="project-card premium-glass reveal">
+                        <div class="project-content">
+                            <h3>Smart Expense Tracker</h3>
+                            <p class="project-value">Intelligent financial tracking</p>
+                            <p class="project-desc">Full-stack application to manage and analyze expenses efficiently.</p>
+                            <div class="tag-list">
+                                <span>JavaScript</span><span>Backend</span><span>Database</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rdivyatej-cloud/smart-expense-tracker" target="_blank" class="btn secondary-btn btn-small">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3 -->
+                    <article class="project-card premium-glass reveal">
+                        <div class="project-content">
+                            <h3>Task API CRUD</h3>
+                            <p class="project-value">RESTful task management</p>
+                            <p class="project-desc">Complete CRUD API with database persistence and robust documentation.</p>
+                            <div class="tag-list">
+                                <span>Node.js</span><span>Express</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rdivyatej-cloud/task-api-crud" target="_blank" class="btn secondary-btn btn-small">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- PROJECT 4 -->
+                    <article class="project-card premium-glass reveal">
+                        <div class="project-content">
+                            <h3>FitLifePulse</h3>
+                            <p class="project-value">Health and fitness platform</p>
+                            <p class="project-desc">A comprehensive platform for tracking fitness goals and health metrics.</p>
+                            <div class="tag-list">
+                                <span>Web</span><span>Full-Stack</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/rdivyatej-cloud/FitLifePulse" target="_blank" class="btn secondary-btn btn-small">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-
-
-                <div class="certificate-card reveal">
-
-                    <i class="bx bx-code-alt"></i>
-
-                    <div>
-
-                        <h3>
-                            Node.js Developer Path
-                        </h3>
-
-                        <p>
-                            MongoDB / SmartBridge
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="certificate-card reveal">
-
-                    <i class="bx bx-brain"></i>
-
-                    <div>
-
-                        <h3>
-                            AI & Prompt Engineering
-                        </h3>
-
-                        <p>
-                            Professional Learning
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="certificate-card reveal">
-
-                    <i class="bx bx-bar-chart-alt-2"></i>
-
-                    <div>
-
-                        <h3>
-                            Google Analytics
-                        </h3>
-
-                        <p>
-                            Google
-                        </p>
-
-                    </div>
-
-                </div>
-
-
             </div>
-
         </section>
 
+        <!-- SKILLS -->
+        <section class="section skills" id="skills">
+            <div class="section-heading reveal">
+                <span>CAPABILITIES</span>
+                <h2>Technical Arsenal.</h2>
+                <p>A growing toolkit built through coursework, internships and personal projects.</p>
+            </div>
+            
+            <div class="skills-container reveal">
+                <div class="skill-group premium-glass">
+                    <div class="skill-group-icon"><i class="bx bx-code-alt"></i></div>
+                    <h3>Languages</h3>
+                    <div class="tag-list">
+                        <span>JavaScript</span><span>Python</span><span>C/C++</span><span>HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group premium-glass">
+                    <div class="skill-group-icon"><i class="bx bx-server"></i></div>
+                    <h3>Backend & APIs</h3>
+                    <div class="tag-list">
+                        <span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-group premium-glass">
+                    <div class="skill-group-icon"><i class="bx bx-brain"></i></div>
+                    <h3>AI & Automation</h3>
+                    <div class="tag-list">
+                        <span>LLM APIs</span><span>Prompt Engineering</span><span>LangChain</span><span>MCP</span>
+                    </div>
+                </div>
+                <div class="skill-group premium-glass">
+                    <div class="skill-group-icon"><i class="bx bx-terminal"></i></div>
+                    <h3>Tools & Practices</h3>
+                    <div class="tag-list">
+                        <span>Git/GitHub</span><span>Docker</span><span>Postman</span><span>Swagger</span><span>Security Fundamentals</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
+        <!-- CERTIFICATES -->
+        <section class="section certificates" id="certificates">
+            <div class="section-heading reveal">
+                <span>CREDENTIALS</span>
+                <h2>Certifications.</h2>
+            </div>
+            
+            <div class="certificates-container">
+                <h3 class="cert-group-title reveal">Featured</h3>
+                <div class="cert-featured-grid">
+                    <div class="certificate-card featured-cert premium-glass reveal">
+                        <div class="cert-icon"><i class="bx bx-code-alt"></i></div>
+                        <div class="cert-info">
+                            <h3>Node.js Developer Path</h3>
+                            <p>MongoDB / SmartBridge</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card featured-cert premium-glass reveal">
+                        <div class="cert-icon"><i class="bx bx-brain"></i></div>
+                        <div class="cert-info">
+                            <h3>AI & Prompt Engineering</h3>
+                            <p>Professional Learning</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="cert-group-title reveal">Additional</h3>
+                <div class="certificate-grid">
+                    <div class="certificate-card premium-glass reveal">
+                        <i class="bx bx-shield-quarter"></i>
+                        <div>
+                            <h3>Introduction to Cybersecurity</h3>
+                            <p>Cisco</p>
+                        </div>
+                    </div>
+                    <div class="certificate-card premium-glass reveal">
+                        <i class="bx bx-bar-chart-alt-2"></i>
+                        <div>
+                            <h3>Google Analytics</h3>
+                            <p>Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- CONTACT -->
         <section class="section contact" id="contact">
-
-            <div class="contact-box reveal">
-
+            <div class="contact-box premium-glass reveal">
                 <div class="contact-heading">
-
                     <span>LET'S CONNECT</span>
-
-                    <h2>
-                        Have an idea?
-                        <br>
-                        Let's build it.
-                    </h2>
-
-                    <p>
-                        I'm open to internships, collaborations,
-                        freelance projects and interesting ideas.
-                    </p>
-
+                    <h2>Ready to build something useful?</h2>
+                    <p>I'm currently looking for internships and professional opportunities in backend and AI engineering.</p>
                 </div>
-
-
                 <div class="contact-buttons">
-
-                    <a
-                        href="mailto:rdivyatej@gmail.com"
-                        class="btn primary-btn">
-
-                        <i class="bx bx-envelope"></i>
-                        Send me an email
-
+                    <a href="mailto:rdivyatej@gmail.com" class="btn primary-btn">
+                        <i class="bx bx-envelope"></i> Send me an email
                     </a>
-
-                    <a
-                        href="https://linkedin.com/in/divyatej2007"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn secondary-btn">
-
-                        <i class="bx bxl-linkedin"></i>
-                        LinkedIn
-
+                    <a href="https://linkedin.com/in/divyatej2007" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">
+                        <i class="bx bxl-linkedin"></i> LinkedIn
                     </a>
-
                 </div>
-
             </div>
-
         </section>
-
     </main>
 
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer>
-
         <div class="footer-container">
-
             <div>
-
-                <a href="#home" class="footer-logo">
-                    Divya<span>tej</span>
-                </a>
-
-                <p>
-                    Backend development · Cybersecurity · Web development
-                </p>
-
+                <a href="#home" class="footer-logo">Divya<span>tej</span></a>
+                <p>Backend development · AI Engineering · Web development</p>
             </div>
-
-
             <div class="footer-socials">
-
-                <a
-                    href="https://github.com/rdivyatej-cloud"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <i class="bx bxl-github"></i>
-
-                </a>
-
-                <a
-                    href="https://linkedin.com/in/divyatej2007"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    <i class="bx bxl-linkedin"></i>
-
-                </a>
-
-                <a href="mailto:rdivyatej@gmail.com">
-
-                    <i class="bx bx-envelope"></i>
-
-                </a>
-
+                <a href="https://github.com/rdivyatej-cloud" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
+                <a href="https://linkedin.com/in/divyatej2007" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+                <a href="mailto:rdivyatej@gmail.com"><i class="bx bx-envelope"></i></a>
             </div>
-
         </div>
-
-
         <div class="copyright">
-
-            © <span id="year"></span> Divyatej.
-            Built with HTML, CSS & JavaScript.
-
+            © <span id="year"></span> Divyatej. Built with HTML, CSS & JavaScript.
         </div>
-
     </footer>
 
-
-    <!-- =========================
-         BACK TO TOP
-    ========================== -->
-
+    <!-- BACK TO TOP -->
     <button id="scroll-top" aria-label="Back to top">
-
         <i class="bx bx-up-arrow-alt"></i>
-
     </button>
 
-
     <!-- JavaScript -->
-
     <script src="script.js"></script>
-
 </body>
 </html>
