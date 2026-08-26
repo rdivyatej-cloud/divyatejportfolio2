@@ -450,3 +450,63 @@ if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) 
         });
     });
 }
+
+/* =====================================================
+   CONTACT FORM HANDLING
+===================================================== */
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        
+        // Basic validation
+        if (!name || !email || !message) {
+            formStatus.textContent = "Please fill in all fields.";
+            formStatus.className = "form-status error";
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            formStatus.textContent = "Please enter a valid email address.";
+            formStatus.className = "form-status error";
+            return;
+        }
+        
+        const submitBtn = document.getElementById("submit-btn");
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.innerHTML = 'Sending... <i class="bx bx-loader bx-spin"></i>';
+        submitBtn.disabled = true;
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                formStatus.textContent = "Thanks for reaching out! I'll get back to you soon.";
+                formStatus.className = "form-status success";
+                contactForm.reset();
+            } else {
+                formStatus.textContent = "Something went wrong. Please try again.";
+                formStatus.className = "form-status error";
+            }
+        } catch (error) {
+            formStatus.textContent = "Something went wrong. Please try again.";
+            formStatus.className = "form-status error";
+        } finally {
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+        }
+    });
+}
